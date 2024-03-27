@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DBConnectionSQL.java&apos; to &apos;BanHangST4/src/main/java/hcmute.controllers&apos;&#x0D;&#x0A;- Original project: &apos;ServletHelloWorld&apos;&#x0D;&#x0A;- Destination element: &apos;BanHangST4/src/main/java/hcmute.controllers&apos;&#x0D;&#x0A;- Original element: &apos;vn.ltweb.controllers.DBConnectionSQL.java&apos;" description="Copy compilation unit" destination="=BanHangST4/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.controllers" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;vn.ltweb.controllers{DBConnectionSQL.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1694573860891" units="1" version="1.0"/>
+</session>

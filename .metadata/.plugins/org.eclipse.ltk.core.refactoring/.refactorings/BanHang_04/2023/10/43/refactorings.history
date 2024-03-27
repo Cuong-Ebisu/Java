@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;DBConnectionSQL.java&apos; to &apos;BanHang_UF/src/main/java/hcmute.DAO&apos;&#x0D;&#x0A;- Original project: &apos;BanHang_04&apos;&#x0D;&#x0A;- Destination element: &apos;BanHang_UF/src/main/java/hcmute.DAO&apos;&#x0D;&#x0A;- Original element: &apos;hcmute.DAO.DBConnectionSQL.java&apos;" description="Copy compilation unit" destination="=BanHang_UF/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.DAO" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.DAO{DBConnectionSQL.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1697596066867" units="1" version="1.0"/>
+</session>

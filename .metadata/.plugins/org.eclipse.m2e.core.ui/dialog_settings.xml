@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="C:\Study\Learn_Code\LTWEB\MyStudy11JPA"/>
+			<item value="C:\Study\Learn_Code\LTWEB"/>
+			<item value="C:\Study\Learn_Code\LTWEB\BanHang_03\src\main\webapp\WEB-INF\web.xml"/>
+			<item value="C:\Study\Learn_Code\LTWEB\demo2\pom.xml"/>
+			<item value="C:\Study\Learn_Code\LTWEB\MakingServlet"/>
+			<item value="C:\Study\Learn_Code\LTWEB\Demo1\pom.xml"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="internal"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+		</list>
+		<list key="groupId">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="hcmute"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="DemoSpring"/>
+			<item value="SpringBootExampleApplication2"/>
+			<item value="SpringBootExampleApplication"/>
+			<item value="ProductUploadFileServlet"/>
+			<item value="UploadFile_MultipartServlet"/>
+			<item value="LoginLogoutaJPA"/>
+			<item value="MyStudy17JPA"/>
+			<item value="LoginLogout"/>
+			<item value="DaoQuyCuong21110390"/>
+			<item value="MyStudy16"/>
+			<item value="MyStudy15"/>
+			<item value="MyStudy14"/>
+			<item value="MyStudy11JPA"/>
+			<item value="MyStudy9"/>
+			<item value="MyStudy8LoginLogout"/>
+		</list>
+		<list key="version">
+			<item value="1.0"/>
+		</list>
+	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="C:\Study\Learn_Code\LTWEB\springexample1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+</section>

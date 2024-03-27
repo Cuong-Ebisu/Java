@@ -1,0 +1,17 @@
+127.0.0.1 - - [03/Dec/2023:22:50:20 +0700] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:22 +0700] "GET /ProductUploadFileServlet/listpro HTTP/1.1" 200 15841
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/templates/user/css/style.css HTTP/1.1" 200 1176
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/OIP.jpeg HTTP/1.1" 200 26239
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/R.jpeg HTTP/1.1" 200 406808
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/assd.jpeg HTTP/1.1" 200 800174
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/OIP%20(1).jpeg HTTP/1.1" 200 22330
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/OIP%20(2).jpeg HTTP/1.1" 200 30122
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/OIP%20(4).jpeg HTTP/1.1" 200 15950
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/OIP%20(3).jpeg HTTP/1.1" 200 17267
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/R%20(1).jpeg HTTP/1.1" 200 63023
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/chanel-no-5-red.jpg HTTP/1.1" 200 114289
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/R%20(2).jpeg HTTP/1.1" 200 302360
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:23 +0700] "GET /ProductUploadFileServlet/uploads/OIP%20(6).jpeg HTTP/1.1" 200 15138
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:24 +0700] "GET /ProductUploadFileServlet/uploads/R%20(3).jpeg HTTP/1.1" 200 984921
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:24 +0700] "GET /ProductUploadFileServlet/uploads/lua-chon-giay-cau-long-Yonex-3.jpg HTTP/1.1" 200 158802
+0:0:0:0:0:0:0:1 - - [03/Dec/2023:22:50:24 +0700] "GET /favicon.ico HTTP/1.1" 404 762

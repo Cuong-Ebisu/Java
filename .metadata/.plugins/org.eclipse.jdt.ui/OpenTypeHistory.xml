@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=MyStudy11JPA/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;entity{Category.java[Category" modifiers="1" timestamp="1699375180558"/>
+    <typeInfo handle="=MyStudy11JPA/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;entity{Product.java[Product" modifiers="1" timestamp="1699375180538"/>
+    <typeInfo handle="=MyStudy16/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{Author.java[Author" modifiers="1" timestamp="1699388538670"/>
+    <typeInfo handle="=MyStudy16/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{Book.java[Book" modifiers="1" timestamp="1699388538896"/>
+    <typeInfo handle="=MyStudy16/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{Rating.java[Rating" modifiers="1" timestamp="1699383552003"/>
+    <typeInfo handle="=MyStudy16/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{RatingKey.java[RatingKey" modifiers="1" timestamp="1699384992592"/>
+    <typeInfo handle="=MyStudy16/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{User.java[User" modifiers="1" timestamp="1699383546345"/>
+    <typeInfo handle="=DaoQuyCuong21110390/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{Category.java[Category" modifiers="1" timestamp="1699411383363"/>
+    <typeInfo handle="=DaoQuyCuong21110390/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{Favorite.java[Favorite" modifiers="1" timestamp="1699412832843"/>
+    <typeInfo handle="=DaoQuyCuong21110390/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{Share.java[Share" modifiers="1" timestamp="1699412832776"/>
+    <typeInfo handle="=DaoQuyCuong21110390/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{User.java[User" modifiers="1" timestamp="1699412832809"/>
+    <typeInfo handle="=DaoQuyCuong21110390/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.entity{Video.java[Video" modifiers="1" timestamp="1700566312218"/>
+    <typeInfo handle="=LoginLogoutaJPA/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;hcmute.Entity{User.java[User" modifiers="1" timestamp="1701163351616"/>
+</typeInfoHistroy>

@@ -1,0 +1,43 @@
+1701958970386	Rename package 'hcmute.ALOHCMUTE2'
+1701959596112	Delete element
+1701959700307	Delete element
+1701959964849	Delete element
+1701959978522	Copy compilation units
+1701959985786	Delete elements
+1701961751998	Delete element
+1701962515188	Delete element
+1701972007386	Rename resource 'categories'
+1701974047439	Pull up members to 'IUserService'
+1701975156942	Pull up members to 'IUserService'
+1701975326863	Pull up members to 'IUserService'
+1701996621326	Rename resource 'user-profile.jsp'
+1702010201683	Pull up members to 'IUserService'
+1702011012559	Pull up members to 'IUserService'
+1702011823120	Pull up members to 'IUserService'
+1702022853404	Delete element
+1702022869868	Delete element
+1702026746953	Pull up members to 'IUserService'
+1702054596868	Rename resource 'profile_friend.jsp'
+1702054607448	Rename resource 'list_friend.jsp'
+1702054642872	Rename resource 'find_friend.jsp'
+1702054649381	Rename resource 'find_fri.jsp'
+1702056430314	Delete element
+1702093723360	Pull up members to 'IFriendshipService'
+1702101876547	Pull up members to 'ISearchService'
+1702112179334	Delete element
+1702113106298	Pull up members to 'IFriendshipService'
+1702113697929	Pull up members to 'IFriendshipService'
+1702135902451	Pull up members to 'IMessageService'
+1702140922544	Delete element
+1702141000812	Pull up members to 'IMessageService'
+1702141221858	Delete element
+1702141231283	Delete element
+1702141239964	Delete element
+1702141440339	Pull up members to 'IMessageService'
+1702143259801	Delete element
+1702143268211	Delete element
+1702143274747	Delete element
+1702144471780	Rename type 'MessageSRRepository'
+1702144546144	Rename type 'IMessageSRService'
+1702144601278	Rename type 'MessageSRServiceImpl'
+1702204275116	Pull up members to 'IGroupChatService'

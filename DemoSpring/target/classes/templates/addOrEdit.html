@@ -1,0 +1,31 @@
+<!-- src/main/resources/templates/admin/categories/addOrEdit.html -->
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add or Edit Category</title>
+</head>
+<body>
+
+<h2>Add or Edit Category</h2>
+
+<form th:action="@{/admin/categories/saveOrUpdate}" method="post" th:object="${category}">
+    <input type="hidden" th:field="*{categoryId}" />
+
+    <label for="categoryName">Category Name:</label>
+    <input type="text" id="categoryName" th:field="*{categoryName}" />
+    <span th:if="${#fields.hasErrors('categoryName')}" th:errors="*{categoryName}"></span>
+
+    <label for="icon">Icon:</label>
+    <input type="text" id="icon" th:field="*{icon}" />
+
+    <label for="imageFile">Image File:</label>
+    <input type="file" id="imageFile" th:field="*{imageFile}" />
+
+    <button type="submit">Save</button>
+</form>
+
+</body>
+</html>

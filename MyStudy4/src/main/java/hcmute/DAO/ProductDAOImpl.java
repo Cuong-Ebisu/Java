@@ -1,0 +1,236 @@
+package hcmute.DAO;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
+
+import hcmute.models.CategoryModels;
+import hcmute.models.ProductModel;
+
+public class ProductDAOImpl implements IProductDAO{
+	
+	Connection conn = null;
+	PreparedStatement ps = null;
+	ResultSet rs = null;
+	//thêm dòng này
+	ICategoryDAO cateDao = new CategoryDAOimpl();
+
+	@Override
+	public List<ProductModel> findAll() {
+		List<ProductModel> listcate = new ArrayList<ProductModel>();
+		String sql = "Select * from Product";
+		
+		try {
+			conn = new DBConnectionSQLServer().getConnection();
+			ps = conn.prepareStatement(sql);
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				ProductModel product = new ProductModel();
+				product.setProductID(rs.getInt("ProductID"));
+				product.setProductName(rs.getString("ProductName"));
+				product.setDescription(rs.getString("Description"));
+				product.setPrice(rs.getInt("Price"));
+				product.setImageLink(rs.getString("imageLink"));
+				product.setCategoryID(rs.getInt("CategoryID"));
+				product.setSellerID(rs.getInt("SellerID"));
+				product.setAmount(rs.getInt("Amount"));
+				product.setStoke(rs.getInt("stoke"));
+				listcate.add(product);
+			}
+			conn.close();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return listcate;
+	}
+
+	@Override
+	public List<ProductModel> findProductByCateory(int cateid) {
+		List<ProductModel> listcate = new ArrayList<ProductModel>();
+		String sql = "Select * from Product Where CategoryID=?";
+		
+		try {
+			conn = new DBConnectionSQLServer().getConnection();
+			ps = conn.prepareStatement(sql);
+			ps.setInt(1, cateid);
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				CategoryModels model1 = cateDao.findOne(rs.getInt("CategoryID"));
+				ProductModel product = new ProductModel();
+				product.setProductID(rs.getInt("ProductID"));
+				product.setProductName(rs.getString("ProductName"));
+				product.setDescription(rs.getString("Description"));
+				product.setPrice(rs.getInt("Price"));
+				product.setImageLink(rs.getString("imageLink"));
+				product.setCategoryID(model1.getCateID());
+				product.setSellerID(rs.getInt("SellerID"));
+				product.setAmount(rs.getInt("Amount"));
+				product.setStoke(rs.getInt("stoke"));
+				listcate.add(product);
+			}
+			conn.close();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return listcate;
+	}
+
+
+
+	@Override
+	public List<ProductModel> countProductByCategory() {
+		List<ProductModel> listcate = new ArrayList<ProductModel>();
+		String sql = "select CategoryID, COUNT(ProductID) from Product group by CategoryID";
+		
+		try {
+			conn = new DBConnectionSQLServer().getConnection();
+			ps = conn.prepareStatement(sql);
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				ProductModel product = new ProductModel();
+				product.setProductID(rs.getInt(1));
+				product.setProductName(rs.getString(2));
+//				product.setDescription(rs.getString("Description"));
+//				product.setPrice(rs.getInt("Price"));
+//				product.setImageLink(rs.getString("imageLink"));
+//				product.setCategoryID(rs.getInt("CategoryID"));
+//				product.setSellerID(rs.getInt("SellerID"));
+//				product.setAmount(rs.getInt("Amount"));
+//				product.setStoke(rs.getInt("stoke"));
+				listcate.add(product);
+			}
+			conn.close();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		return listcate;
+	}
+
+	@Override
+	public void insert(ProductModel model) {
+		String sql = "insert into product(ProductName,Description,Price,imageLink,CategoryID,stoke) values(?,?,?,?,?,?)";
+		try {
+			conn = new DBConnectionSQLServer().getConnection();
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, model.getProductName());
+			ps.setString(2, model.getDescription());
+			ps.setInt(3, model.getPrice());
+			ps.setString(4, model.getImageLink());
+			ps.setInt(5, model.getCategory().getCateID());
+			ps.setInt(6, model.getStoke());
+			ps.executeUpdate();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+	@Override
+	public void update(ProductModel model) {
+		String sql = "update Product set ProductName = ?, Description= ? where ProductID = ? ";
+		try {
+			conn = new DBConnectionSQLServer().getConnection();
+			ps = conn.prepareStatement(sql);
+			ps.setString(1, model.getProductName());
+			ps.setString(2, model.getDescription());
+			
+			ps.setInt(3, model.getProductID());
+			
+			ps.executeUpdate();
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+
+		
+	}
+
+	@Override
+	public ProductModel findOne(int id) {
+		String sql = "select * from Product where ProductID = ?";
+		ProductModel model = new ProductModel();
+		try {
+			conn = new DBConnectionSQLServer().getConnection();
+			ps = conn.prepareStatement(sql);
+			ps.setInt(1, id);
+			rs = ps.executeQuery();
+			while (rs.next()) {
+				CategoryModels model1 = cateDao.findOne(rs.getInt("CategoryID"));
+
+				model.setProductID(rs.getInt("productID"));
+				model.setProductName(rs.getString("productName"));
+				model.setDescription(rs.getString("description"));
+				model.setPrice(rs.getInt("price"));
+				model.setImageLink(rs.getString("imageLink"));
+				model.setCategoryID(model1.getCateID());
+				model.setSellerID(rs.getInt("sellerID"));
+				model.setStoke(rs.getInt("stoke"));
+
+			}
+			conn.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return model;
+	}
+	
+	public static void main(String[] args) {
+		IProductDAO proDao = new ProductDAOImpl();
+		List<ProductModel> list = proDao.countProductByCategory();
+		System.out.println(list);
+		
+	}
+
+	@Override
+	public void delete(ProductModel model) {
+		String sql = "delete from Product where ProductID = ? ";
+		try {
+			conn = new DBConnectionSQLServer().getConnection();
+			ps = conn.prepareStatement(sql);
+			//gan gia tri cho tham so
+			ps.setInt(1, model.getProductID());
+			
+			ps.executeUpdate();
+			//thuc thi cau query
+			conn.close();
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+		
+		
+	}
+
+	@Override
+	public void delete(int id) {
+		String sql = "delete from Product where ProductID = ? ";
+		try {
+			conn = new DBConnectionSQLServer().getConnection();
+			ps = conn.prepareStatement(sql);
+			//gan gia tri cho tham so
+			
+			ps.setInt(1, id);
+			
+			ps.executeUpdate();//thuc thi cau query
+			conn.close();
+			
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
+	}
+	
+}

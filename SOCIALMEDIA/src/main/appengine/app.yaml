@@ -1,0 +1,18 @@
+runtime: java
+env: flex
+
+runtime_config:
+  jdk: openjdk17
+
+# [START handlers]
+handlers:
+- url: /.*
+  script: this field is required, but ignored
+# [END handlers]
+
+automatic_scaling:
+  min_num_instances: 1
+  max_num_instances: 5
+  cool_down_period_sec: 60
+  cpu_utilization:
+    target_utilization: 0.65

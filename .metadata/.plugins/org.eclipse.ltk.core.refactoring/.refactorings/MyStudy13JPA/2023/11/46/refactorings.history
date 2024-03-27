@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;MyStudy13JPA/src/main/java/META-IF&apos; to &apos;META-INF&apos;" description="Rename resource &apos;META-IF&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/java/META-IF" name="META-INF" stamp="1699371690388" updateReferences="true"/>
+</session>
